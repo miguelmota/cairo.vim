@@ -23,11 +23,11 @@ syn keyword clKeywordControlEnd end
 syn match clFuncName /\zs[a-zA-Z_][a-zA-Z0-9_]*\ze\s*(/ contained
 syn keyword clKeywordFunc func nextgroup=clFuncName skipwhite
 
-hi clCommentLine ctermfg=7
+hi link clCommentLine Comment
 hi clKeywordControlElse ctermfg=5
 hi clKeywordOpcode ctermfg=6
-hi clKeywordMeta ctermfg=6
-hi clKeywordItalic ctermfg=6
+hi link clKeywordMeta Keyword
+hi link clKeywordItalic Keyword
 hi clEntityFuncName ctermfg=3
 hi clKeywordControlIf ctermfg=5
 hi clEntityCondition ctermfg=3
